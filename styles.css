@@ -90,6 +90,13 @@ header {
     font-size: 1.2em;
 }
 
+.lang-selector {
+    text-align: right;
+    margin: 20px 40px 0 0;
+    font-weight: bold;
+}
+
+
 /* Contenu principal */
 main {
     padding: 30px 40px;
@@ -261,29 +268,30 @@ footer {
 /* Téléchargements */
 .download-section {
     background-color: var(--section-bg);
-    padding: 20px;
+    padding: 10px;
     border-radius: 5px;
-    margin: 30px 0;
+    margin: 20px 0;
     text-align: center;
 }
 
 .download-buttons {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    margin-top: 15px;
+    gap: 10px;
+    margin-top: 10px;
 }
 
 .download-button {
     background-color: var(--primary-color);
     color: var(--white);
-    padding: 10px 20px;
+    padding: 8px 16px;
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
     display: inline-flex;
     align-items: center;
     transition: background-color 0.3s;
+    font-size: 0.9em;
 }
 
 .download-button:hover {
@@ -291,7 +299,42 @@ footer {
 }
 
 .download-button i {
-    margin-right: 8px;
+    margin-right: 5px;
+}
+
+/* Sélecteur de langue */
+.lang-selector {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+}
+
+.lang-selector a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.lang-selector a:hover {
+    color: var(--accent-color);
+}
+
+/* Lien LinkedIn */
+.contact-info a,
+.contact-info a:hover {
+    color: var(--white);
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.contact-info i.fab.fa-linkedin {
+    margin-right: 5px;
+    font-size: 1.2em;
+    color: var(--white);
 }
 
 /* Responsive */
